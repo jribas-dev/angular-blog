@@ -12,6 +12,7 @@ import { SmallCardComponent } from './components/small-card/small-card.component
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
+
 export class AppComponent {
   title = 'angular-blog';
 }

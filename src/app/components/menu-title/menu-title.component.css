@@ -1,0 +1,10 @@
+h1 {
+    font-size: 3.50em;
+    font-weight: 700;
+}
+
+.divtitle {
+    display: block;
+    text-align: center;
+    padding: 2em;
+}

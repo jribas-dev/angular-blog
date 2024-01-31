@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './menu-title.component.css'
 })
 export class MenuTitleComponent {
-
+  blogtitle = 'My First Angular Blog';
 }
