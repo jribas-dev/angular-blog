@@ -1,0 +1,30 @@
+.smallcard__content {
+    display: inline-flex;
+    padding: 20px 0px 20px 0px;;
+}
+
+.smallcard__text {
+    display: block;
+}
+
+.smallcard__image > img {
+    border-radius: 8px;
+    min-width: 300px;
+}
+
+
+.smallcard__author-date > p {
+    color: gray;
+    font-size: 0.7em;
+    padding: 0px 5px 0px 10px;
+}
+
+.smallcard__description > p {
+    font-size: 0.9em;
+    padding: 5px 5px 0px 10px;
+    text-align: justify;
+}
+
+.smallcard__conteiner > hr {
+    border-style: dashed;
+}

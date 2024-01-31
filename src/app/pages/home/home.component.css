@@ -4,21 +4,21 @@
 }
 
 .div__home-container {
-    display: inline-flex;
-    justify-content: space-around;
-    border: solid 2px white;
-    margin: 20px;
-    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
 }
 
 .div__home-bigcard {
     display: flex;
-    margin: 20px;
-    border: solid 2px white;
+    padding: 20px;
+    max-width: 600px;
 }
 
 .div__home-smallcard {
-    display: block;
-    margin: 20px;
-    border: solid 2px white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    max-width: 800px;
 }
