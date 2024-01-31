@@ -3,22 +3,47 @@
     justify-content: center;
 }
 
-.div__home-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 20px;
+@media (width <= 1399px) {
+    .div__home-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .div__home-bigcard {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        max-width: 600px;
+    }
+
+    .div__home-smallcard {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        max-width: 700px;
+    }
 }
 
-.div__home-bigcard {
-    display: flex;
-    padding: 20px;
-    max-width: 600px;
-}
+@media (width >= 1400px) {
+    .div__home-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 20px;
+    }
 
-.div__home-smallcard {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    max-width: 800px;
+    .div__home-bigcard {
+        display: flex;
+        padding: 20px;
+        max-width: 600px;
+    }
+
+    .div__home-smallcard {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        max-width: 800px;
+    }
 }
