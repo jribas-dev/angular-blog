@@ -1,0 +1,24 @@
+.div__home {
+    display: flex;
+    justify-content: center;
+}
+
+.div__home-container {
+    display: inline-flex;
+    justify-content: space-around;
+    border: solid 2px white;
+    margin: 20px;
+    width: 1200px;
+}
+
+.div__home-bigcard {
+    display: flex;
+    margin: 20px;
+    border: solid 2px white;
+}
+
+.div__home-smallcard {
+    display: block;
+    margin: 20px;
+    border: solid 2px white;
+}
