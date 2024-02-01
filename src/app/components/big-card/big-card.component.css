@@ -1,5 +1,5 @@
-.bigcard__image > img {
-    border-radius: 8px;
+.bigcard__image > a > img {
+    border-radius: 10px;
     min-width: 600px;
 }
 

@@ -3,35 +3,23 @@
     <div><app-menu-title></app-menu-title></div>
     <div class="div__home">
         <div class="div__home-container">
-        <div class="div__home-bigcard">
-            <app-big-card 
-            bigCardTitle="Angular vs AngularJS"
-            bigCardDescription="In September 2016, Google released Angular 2. The difference between the old AngularJS and the new version was so radical that you couldn’t just update from one to the other. The main changes are as follows."
-            ></app-big-card>
-        </div>
-        <div class="div__home-smallcard">
-            <div>
-                <app-small-card 
-                smallCardAuthorDate="By WebContent 31-01-2024"
-                smallCardDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris a mollis quam. Aliquam erat volutpat. Nulla sed est purus. Duis congue tellus id neque tincidunt, nec interdum lectus scelerisque. Mauris in lacus molestie, vehicula leo vel, efficitur dolor. Morbi iaculis neque nec tortor euismod, a pretium sapien euismod."
-                >
-                </app-small-card>
+            <div *ngFor="let feature of featureContents;" class="div__home-bigcard">
+                <app-big-card 
+                bigCardTitle="{{ feature.title }}"
+                bigCardDescription="{{ feature.text }}"
+                bigCardSlug="{{ feature.slug }}"
+                ></app-big-card>
             </div>
-            <div>
-                <app-small-card 
-                smallCardAuthorDate="By WebContent 28-01-2024"
-                smallCardDescription="Integer sodales tortor non vulputate aliquam. Curabitur in placerat eros. Sed id tempor nibh. Pellentesque ullamcorper turpis a ligula rutrum, sit amet elementum libero ultrices. Donec rutrum dolor in massa maximus hendrerit. Praesent lacinia nunc quis elit commodo, nec laoreet est egestas."
-                >
-                </app-small-card>
+            <div class="div__home-smallcard">
+                <div *ngFor="let other of otherContents;">
+                    <app-small-card 
+                    smallCardAuthorDate="{{ other.authordate }}"
+                    smallCardDescription="{{ other.text }}"
+                    smallCardSlug="{{ other.slug }}"
+                    >
+                    </app-small-card>
+                </div>
             </div>
-            <div>
-                <app-small-card 
-                smallCardAuthorDate="By WebContent 25-01-2024"
-                smallCardDescription="Nulla feugiat sapien ligula, quis varius magna laoreet in. Sed a venenatis augue, quis vehicula sapien. Curabitur eget lorem mattis nulla ultrices congue et vitae quam. Integer sodales tortor non vulputate aliquam."
-                >
-                </app-small-card>
-            </div>
-        </div>
         </div>
     </div>
 </main>

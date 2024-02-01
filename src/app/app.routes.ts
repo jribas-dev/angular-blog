@@ -14,6 +14,10 @@ export const routes: Routes = [
     },
     {
         path: 'content',
+        component: AboutComponent
+    },
+    {
+        path: 'content/:slug',
         component: ContentComponent
     },
 ];

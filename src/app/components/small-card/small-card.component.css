@@ -7,7 +7,7 @@
     display: block;
 }
 
-.smallcard__image > img {
+.smallcard__image > a > img {
     border-radius: 8px;
     min-width: 300px;
 }

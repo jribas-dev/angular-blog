@@ -1,0 +1,44 @@
+.content__wrapper {
+    margin-top: 60px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.content__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 800px;
+}
+
+.content__image > img {
+    border-radius: 10px;
+    max-width: 600px;
+}
+
+.content__author > p {
+    font-size: 0.8em;
+    color: gray;
+    padding-top: 5px;
+}
+
+.content__title > h2 {
+    font-size: 1.8em;
+    font-weight: 500;
+    padding-top: 10px;
+}
+
+.content__text > p {
+    font-size: 1.2em;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    text-align: justify;
+}
+
+.content__text > p > a{
+    font-size: 1.0em;
+    font-weight: 500;
+    text-align: left;
+}
