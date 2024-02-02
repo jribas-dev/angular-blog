@@ -1,15 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 import { MenuBarComponent } from '../../components/menu-bar/menu-bar.component';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, RouterModule } from '@angular/router';
 import { dataFake, img600x400Base64 } from '../../data/dataFake';
 
 @Component({
   selector: 'app-content',
   standalone: true,
-  imports: [MenuBarComponent],
+  imports: [RouterModule, MenuBarComponent],
   templateUrl: './content.component.html',
   styleUrl: './content.component.css'
 })
+
 export class ContentComponent implements OnInit {
   contentImage = img600x400Base64
   contentAuthor: String = ""

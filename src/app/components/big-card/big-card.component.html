@@ -1,11 +1,11 @@
 <div class="bigcard__image">
-    <a href="content/{{bigCardSlug}}">
+    <a [routerLink]="['content', bigCardSlug]">
     <img src="{{ bigCardImageBase64 }}" alt="BigCard Image">
     </a>
 </div>
 <div class="bigcard__title">
-    <h2><a href="content/{{bigCardSlug}}">{{ bigCardTitle }}</a></h2>
+    <h2><a [routerLink]="['content', bigCardSlug]">{{ bigCardTitle }}</a></h2>
 </div>
 <div class="bigcard__description">
-    <p><a href="content/{{bigCardSlug}}">{{ bigCardDescription }}</a></p>
+    <p><a [routerLink]="['content', bigCardSlug]">{{ bigCardDescription }}</a></p>
 </div>

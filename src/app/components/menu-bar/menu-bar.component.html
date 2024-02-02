@@ -1,14 +1,14 @@
 <nav>
   <div class="wrapper">
-    <div class="logo"><a [href]="['']">Logo</a></div>
+    <div class="logo"><a [routerLink]="['']">Logo</a></div>
     <input type="radio" name="slider" id="menu-btn" />
     <input type="radio" name="slider" id="close-btn" />
     <ul class="nav-links">
       <label for="close-btn" class="btn close-btn"
         ><i class="fas fa-times"></i
       ></label>
-      <li><a [href]="['']">Home</a></li>
-      <li><a [href]="['about']">About</a></li>
+      <li><a [routerLink]="['']">Home</a></li>
+      <li><a [routerLink]="['about']">About</a></li>
       <li>
         <a href="#" class="desktop-item">Dropdown Menu</a>
         <input type="checkbox" id="showDrop" />
@@ -62,7 +62,7 @@
           </div>
         </div>
       </li>
-      <li><a [href]="['content']">Feedback</a></li>
+      <li><a [routerLink]="['content']">Feedback</a></li>
     </ul>
     <label for="menu-btn" class="btn menu-btn"
       ><i class="fas fa-bars"></i
